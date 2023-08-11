@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PW Skills | Blog</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./assets/logo.jpeg" type="image/x-icon" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="navbar">
+      <nav class="nav-belt">
+        <h2>PWSKills Blog</h2>
+        <button class="addBlog-btn">+</button>
+      </nav>
+    </header>
+
+    <!-- blog section -->
+    <section class="blogs-section"></section>
+
+    <!-- modal -->
+    <section class="modal-section toggleModal">
+      <div class="modal">
+        <button class="closeModal-btn">X</button>
+        <form class="modal-form">
+          <input
+            type="text"
+            name="thumbnail"
+            id="thumbnail"
+            class="inp"
+            placeholder="Enter blog thumbnail URL"
+            required
+          />
+          <input
+            type="text"
+            name="title"
+            id="title"
+            class="inp"
+            placeholder="Enter blog title"
+            required
+          />
+          <input
+            type="text"
+            name="desc"
+            id="desc"
+            class="inp"
+            placeholder="Enter blog description"
+            required
+          />
+          <textarea
+            type="text"
+            name="blogContent"
+            id="blogContent"
+            class="inp blogInp"
+            placeholder="Write blog"
+            rows="10"
+            required
+          ></textarea>
+          <button class="btn submitModal-btn" type="submit">Add Blog</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
